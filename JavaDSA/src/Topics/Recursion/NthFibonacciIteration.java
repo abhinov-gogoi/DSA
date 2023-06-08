@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 /**
  * Problem Statement - Write a program to print the Nth number in the Fibonacci series, (using iteration)
- * Sample Input - 8
+ * Sample Input - 7
  * Sample Output - 13
- * Sample Explanation - 13 is the 8th number in the fibonacci series
+ * Sample Explanation - 13 is the 7th number in the fibonacci series starting count from 0
  */
 public class NthFibonacciIteration {
 

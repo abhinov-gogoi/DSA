@@ -5,8 +5,8 @@ import java.util.Scanner;
 /**
  * Problem Statement - Write a program to print the Nth number in the Fibonacci series, (using recusrion)
  * Sample Input - 5
- * Sample Output - 3
- * Sample Explanation - 3 is the 5th number in the fibonacci series
+ * Sample Output - 5
+ * Sample Explanation - 5 is the 5th number in the fibonacci series starting count from 0
  * Link - https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
  */
 public class NthFibonacci {
