@@ -3,11 +3,11 @@ package DataStructures.list;
 public class Main {
     public static void main(String[] args) {
 
-        DSxArraylist2 arrayList = new DSxArraylist2(1);
+        DSxArrayList2<String> arrayList = new DSxArrayList2<>(1);
 
-        arrayList.add(23);
-        arrayList.add(45);
-        arrayList.add(60);
+        arrayList.add("a");
+        arrayList.add("b");
+        arrayList.add("c");
 
         System.out.println(arrayList.size());
 
