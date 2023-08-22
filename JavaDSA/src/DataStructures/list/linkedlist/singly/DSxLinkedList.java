@@ -12,6 +12,13 @@ public class DSxLinkedList<T> {
         this.head = head;
     }
 
+    @SafeVarargs
+    public DSxLinkedList(T ... elements) {
+        for (T element : elements) {
+            add(element);
+        }
+    }
+
     public void print() {
         SLLNode<T> currentNode = head;
         while (currentNode != null) {

@@ -10,5 +10,11 @@ public class Main {
         list.print();
         System.out.println(list.tail.data);
         System.out.println(list.size);
+
+        /**
+         * Example 2
+         */
+        DSxLinkedList<Integer> list2 = new DSxLinkedList<>(1, 2, 3, 4, 5);
+        list2.print();
     }
 }
