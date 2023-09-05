@@ -1,10 +1,12 @@
 package Practice.CodingNinjas.Day2;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Scanner;
 
 /**
  * https://www.codingninjas.com/studio/problems/first-missing-positive_699946
+ * https://leetcode.com/problems/first-missing-positive/
  */
 public class FirstMissingPositive {
 
@@ -41,7 +43,7 @@ public class FirstMissingPositive {
         }
     }
 
-    public static int firstMissing(int[] array, int length) {
+    public static int firstMissingUsingMap(int[] array, int length) {
         HashMap<Integer, Integer> mapOfIndexes = new HashMap<>(length * 2);
         for (int index : array) {
             mapOfIndexes.put(index, index);
@@ -56,6 +58,25 @@ public class FirstMissingPositive {
                 return currentPositiveNumberInCheck;
             }
             currentPositiveNumberInCheck++;
+        }
+    }
+
+    public static int firstMissing(int[] array, int length) {
+        HashSet<Integer> set = new HashSet<>();
+        for (int index : array) {
+            if(index>0) {
+                set.add(index);
+            }
+        }
+
+        int currentPositiveNumberInCheck = 1;
+        // looping all positive numbers from +1 to +infinity
+        while(true) {
+            if(set.contains(currentPositiveNumberInCheck)) {
+                currentPositiveNumberInCheck++;
+            } else {
+                return currentPositiveNumberInCheck;
+            }
         }
     }
 
