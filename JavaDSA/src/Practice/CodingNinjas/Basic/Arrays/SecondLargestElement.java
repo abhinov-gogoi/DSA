@@ -1,4 +1,4 @@
-package Practice.CodingNinjas.Day1;
+package Practice.CodingNinjas.Basic.Arrays;
 
 import java.util.Arrays;
 

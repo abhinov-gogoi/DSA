@@ -1,4 +1,4 @@
-package Practice.CodingNinjas.Day3;
+package Practice.CodingNinjas.Basic.String;
 
 /**
  * Run Length Encoding

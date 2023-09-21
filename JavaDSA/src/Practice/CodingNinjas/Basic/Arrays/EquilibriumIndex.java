@@ -1,4 +1,4 @@
-package Practice.CodingNinjas.Day2;
+package Practice.CodingNinjas.Basic.Arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
